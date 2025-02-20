@@ -53,13 +53,13 @@ function checkForWinner() {
     }
 
     if (roundWon) {
-        statusText.textContent = `玩家 ${currentPlayer} 赢了！`;
+        statusText.textContent = `Player ${currentPlayer} won！`;
         gameActive = false;
         return;
     }
 
     if (!gameState.includes('')) {
-        statusText.textContent = '平局！';
+        statusText.textContent = 'Draw！';
         gameActive = false;
         return;
     }
